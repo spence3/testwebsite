@@ -1,0 +1,277 @@
+<!-- DISCLAIMER: The purpose of this site is for dating my friend tanner. There are three sections--
+a home page, a page for date ideas and a page for contact information/misc. My code is not copied 
+Project 4 updates: I changed the classes that were only used once to id's for better readability and to eliminate confusion
+I also changed the background image on the home so that the whole home page was the same linear gradiant.
+Also changed where the user inputs their information.
+Changing any more detail on the dark mode would have been too much. I feel that what I have done with it is simple, but still makes the 
+website very enjoyable to be on. 
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head id = "head">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanner Pratt</title>
+    <script src="JS/validation.js" defer></script>
+    <script src="JS/script.js" defer></script>
+    <link href = "script.css", rel = "stylesheet">
+</head>
+
+<body class = "darkmode">
+    <div class = "head-main">
+        <nav>
+            <header class = "grid-header">
+                <h1 class = "flex-h1">DateTanner.com</h1>
+                <img id = "tanner" src="img/Tanner_Logo.JPG" alt="Tanner eating tree">
+                    <div class = "flex-nav">
+                        <a id = "clickHome" class="nav-item">Home</a>
+                        <a id = "clickDates"class="nav-item">Dates</a>
+                        <a id = "clickConnect"class="nav-item">Connect</a>
+                        <a id = "clickForm" class="nav-item">Visit Form</a>
+                        <a id = "darkButton">Dark Mode</a>
+                    </div>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+            </header>
+        </nav>
+    </div>
+
+    <section id = "home">
+        <div>
+            <div id = "grid-main">
+                <section>
+                    <h1>Hello, I'm Tanner Pratt!!!</h1>
+                    <p id = "p">
+                        Hey Guys, I'm Tanner Pratt. I'm here for a silly good time.
+                        I was born and raised here in the Utah Valley. I go to school studying
+                        pre-law and I'm loving it. I'm super talented and I have an amazing personality.
+                        If you feel like you have any connection to me, you should look at the date ideas and hmu.
+                    </p>
+                </section>
+                <img src = "img/tanner-main.jpeg" alt = "test">
+            </div>
+        </div>
+
+        <footer>
+            <!-- img slider start -->
+            <div class="slider">
+                <div class="slides">
+                    <!-- radio btn start -->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+                    <!-- radio btn end -->
+                    <!-- slide imgs start -->
+                    <div class="slide first">
+                        <img src="img/tannerslide1.JPG" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/tannerslide2.JPG" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/tannerslide3.JPG" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="img/tannerslide4.JPG" alt="">
+                    </div>
+                    <!-- slide imgs end  -->
+                    <!-- automatic nav starts -->
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                    <!-- automatic nav ends -->
+                </div>
+                <!-- manual naviagtion start -->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+                <!-- manual navigation end -->
+            </div>
+            <!-- img slider end  -->
+
+        </footer>
+
+    </section>
+
+    <section id = "dates">
+        <div id = "filler head-main">
+            <div id = "h1-flex-container">
+                <h1>Date Me!</h1>
+                <h2>pretty</h2>
+                <h3>please...</h3>
+            </div>
+            <div id = "grid-date">
+                <div class = "flex-container">
+                    <img src="img/nyc.jpeg">
+                    <p>NYC Date</p>
+                </div>
+                <div class = "flex-container">
+                    <img src = "img/school.JPG" alt="First day of school">
+                    <p>School date</p>
+                </div>
+                <div class="flex-container" id = "date-flex-container3">
+                    <img src="img/shopping.jpeg" alt="grocery">
+                    <p>grocery shopping</p>
+                </div>
+                <div class = "flex-container">
+                    <img src="img/restaurant.jpeg" alt="tanner at restaurant">
+                    <p>Restaurant of my choice: You're paying</p>
+                </div>
+                <div class = "flex-container">
+                    <img src="img/clothes.jpeg" alt = "shopping">
+                    <p>Clothe shopping: Buy me my favorite shoes and I'll love you forever</p>
+                </div>
+                <div class = "flex-container">
+                    <img src="img/Dance.jpeg" alt="Tanner grooving">
+                    <p>Free dance lesson</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id = "connect">
+        <div id = "grid-connect">
+            <main>
+                <p>You can connect with me here, but if you want to come to my place
+                I have it on google maps here. I also left a video of me riding my scooter
+                that could be you on the back of it next time.
+                </p>
+            </main>
+            <div id = "form-flex">
+                <form action="https://formsubmit.co/tannerpratt39@gmail.com" method="POST">
+                    <div id = "info">
+                        <p>put your info here</p>
+                        <div>
+                        <label for="name" class="label">Name</label>
+                        <input type="text" name="name" id="name" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="phone" class="label">Phone Number</label>
+                        <input type="text" name="phone" id="phone" required>
+                    </div>
+                    <div>
+                        <label for="email" class="label">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <textarea name="summary" rows="4" cols="28" placeholder="Tell me about yourself and what date you want to take me on..."></textarea>
+                    </div>
+                    <div>
+                    <button id = "Submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <aside>
+                <p id = "map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3045.3494201973417!2d-111.6612302846496!3d40.24576517938546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d912620387aa7%3A0xa41dec6735b5b9c4!2sCollege%20Place%20Woodland%20Heights!5e0!3m2!1sen!2sus!4v1667167963967!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            </aside>
+            <div>
+                <iframe id = "video" width="560" height="315" src="https://www.youtube.com/embed/3ecoDxEf2qo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id = "contact-info">
+                <h1>contact me here</h1>
+                <ul>
+                    <li>Phone: (801) 357-9700</li>
+                    <li>email: tannerPratt2@dateme.com</li>
+                    <li>address: you can see it above</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="visit">
+        <div id="success-message">Thank you for your submission</div>
+        <div id="form-container">
+            <div id="opening">
+                <h1 id="welcome">Visitors Welcome</h1>
+                <h1 id="find-us">How did you find us</h1>
+            </div>
+            <form id="visit-form" method="GET">
+                <div id="all-info">
+                    <div>
+                        <label for="first-name" class="label">First Name</label>
+                        <input type="text" name="first-name" id="first-name" required>
+                        <div class="errmsg" id="first-name-error"></div>
+                    </div>
+                    <div>
+                        <label for="last-name" class="label">Last Name</label>
+                        <input type="text" name="last-name" id="last-name" required>
+                        <div class="errmsg" id="last-name-error"></div>
+                    </div>
+                    <div>
+                        <label for="address" class="label">Address</label>
+                        <input type="text" name="address" id="address" required>
+                        <div class="errmsg" id="address-error"></div>
+                    </div>
+                    <div>
+                        <label for="city" class="label">City</label>
+                        <input type="text" name="city" id="city" required>
+                        <div class="errmsg" id="city-error"></div>
+                    </div>
+                    <div>
+                        <label for="state" class="label">State</label>
+                        <input type="text" name="state" id="state" required>
+                        <div class="errmsg" id="state-error"></div>
+                    </div>
+                    <div>
+                        <label for="Zip" class="label">Zip</label>
+                        <input type="text" name="Zip" id="Zip" required>
+                        <div class="errmsg" id="zip-error"></div>
+                    </div>
+                    <div>
+                        <label for="email" class="label">Email</label>
+                        <input type="text" name="email" id="Email" required>
+                        <div class="errmsg" id="email-error"></div>
+                    </div>
+                    <div>
+                        <label for="Phone" class="label">Phone</label>
+                        <input type="text" name="Phone" id="Phone" required>
+                        <div class="errmsg" id="phone-error"></div>
+                    </div>
+                </div>
+                <div id="find-info">
+                    <div>
+                        <input type="checkbox" name="find-page" id="friend">
+                        <label for="friend">Friend</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="find-page" id="google">
+                        <label for="google">Google</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="find-page" id="qr">
+                        <label for="google">QR</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="find-page" id="ad">
+                        <label for="ad">Ad</label>
+                        <div class="errmsg" id="check-error"></div>
+                    </div>
+                </div>
+                
+                <div id="leave-comment">
+                    <h2 id="comment">comments</h2>
+                    <textarea name="comment" cols="100" rows="10"></textarea>
+                </div>
+                <div id="submit-visit-form">
+                    <button type="submit" id="submitBtn">Submit</button>
+                </div>
+            </form>
+        </div> 
+
+    </section>
+</body>
+
+</html>

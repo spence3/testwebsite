@@ -1,0 +1,24 @@
+.darkmode{
+    background-image: linear-gradient(135deg,rgb(46, 57, 64),rgb(48, 52, 64),#475259 50%,#404f55 78%);
+    color: white;
+}
+
+#home{
+    background-image:linear-gradient(135deg,rgb(46, 57, 64),rgb(48, 52, 64),#475259 50%,#404f55 78%);
+    color: rgb(255, 253, 253);
+}
+
+#dates{
+    /* background-image:linear-gradient(135deg,rgb(46, 57, 64),rgb(48, 52, 64),#475259 50%,#404f55 78%); */
+    color: rgb(255, 253, 253);
+}
+
+#connect{
+    background-image:linear-gradient(135deg,rgb(46, 57, 64),rgb(48, 52, 64),#475259 50%,#404f55 78%);
+    color: rgb(255, 253, 253);
+}
+
+#visit{
+    background-image:linear-gradient(135deg,rgb(46, 57, 64),rgb(48, 52, 64),#475259 50%,#404f55 78%);
+    color: rgb(255, 253, 253);
+}
